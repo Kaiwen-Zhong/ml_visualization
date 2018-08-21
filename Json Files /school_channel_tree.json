@@ -1,0 +1,26 @@
+{
+  "label": "Channel = Email", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0", "Condition_school": "Channel = ", "node": "0",
+  "children": [
+    {
+      "label": "School = Hover to view Condition", "condition": "24.50", "type": "split", "leaf_num": "100", "sample_count": "0", "Condition_school": "School = /Stanford/Rutgers/NYU/UCLA/Purdue/Johns Hopkins/Columbia/Harvard/NYU Langone/UCSF/University of Alabama/RWJ University/UCB/UCSD/University of Texas at Dallas/Dell Medical School/USF/Georgetown University/Medical College of Georgia/University of Washington/University of Rochester/Syracuse/Drexel University/UR/UB", "node": "1",
+      "children": [
+        {
+          "label": "School = Hover to view Condition", "condition": "17.50", "type": "split", "leaf_num": "100", "sample_count": "0", "Condition_school": "School = /Stanford/Rutgers/NYU/UCLA/Purdue/Johns Hopkins/Columbia/Harvard/NYU Langone/UCSF/University of Alabama/RWJ University/UCB/UCSD/University of Texas at Dallas/Dell Medical School/USF/Georgetown University", "node": "2",
+          "children": [
+            {
+              "label": "Leaf - 3", "condition": 0, "type": "leaf", "leaf_num": "3", "sample_count": "825", "Condition_school": "NA", "node": "3"}, {
+              "label": "Leaf - 4", "condition": 0, "type": "leaf", "leaf_num": "4", "sample_count": "59", "Condition_school": "NA", "node": "4"}]}, {
+          "label": "Leaf - 5", "condition": 0, "type": "leaf", "leaf_num": "5", "sample_count": "99", "Condition_school": "NA", "node": "5"}]}, {
+      "label": "Channel = Email/Direct Mail", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0", "Condition_school": "Channel = ", "node": "6",
+      "children": [
+        {
+          "label": "School = Hover to view Condition", "condition": "23.50", "type": "split", "leaf_num": "100", "sample_count": "0", "Condition_school": "School = /Stanford/Rutgers/NYU/UCLA/Purdue/Johns Hopkins/Columbia/Harvard/NYU Langone/UCSF/University of Alabama/RWJ University/UCB/UCSD/University of Texas at Dallas/Dell Medical School/USF/Georgetown University/Medical College of Georgia/University of Washington/University of Rochester/Syracuse/Drexel University/UR", "node": "7",
+          "children": [
+            {
+              "label": "Leaf - 8", "condition": 0, "type": "leaf", "leaf_num": "8", "sample_count": "188", "Condition_school": "NA", "node": "8"}, {
+              "label": "Leaf - 9", "condition": 0, "type": "leaf", "leaf_num": "9", "sample_count": "46", "Condition_school": "NA", "node": "9"}]}, {
+          "label": "School = Hover to view Condition", "condition": "14.50", "type": "split", "leaf_num": "100", "sample_count": "0", "Condition_school": "School = /Stanford/Rutgers/NYU/UCLA/Purdue/Johns Hopkins/Columbia/Harvard/NYU Langone/UCSF/University of Alabama/RWJ University/UCB/UCSD/University of Texas at Dallas", "node": "10",
+          "children": [
+            {
+              "label": "Leaf - 11", "condition": 0, "type": "leaf", "leaf_num": "11", "sample_count": "418", "Condition_school": "NA", "node": "11"}, {
+              "label": "Leaf - 12", "condition": 0, "type": "leaf", "leaf_num": "12", "sample_count": "15", "Condition_school": "NA", "node": "12"}]}]}]}
