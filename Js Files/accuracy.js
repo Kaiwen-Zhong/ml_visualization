@@ -40,7 +40,7 @@ var accuracy = Math.floor(((pred_test.length - count) / pred_test.length) * 100)
 
 accuracy = (accuracy) + "%";
 
-var acc = [accuracy];
+var acc = [accuracy, "Test Accuracy"];
 
 
 
@@ -147,8 +147,22 @@ svg.selectAll("text")
   .append("text")
   .transition()
   .duration(3500)
-  .attr("x", 320)
-  .attr("y", 392)
+  .attr("x", function(d, i) {
+    if (i === 0) {
+      return 335;
+    }
+    else {
+      return 295;
+    }
+  })
+  .attr("y", function(d, i){
+    if(i === 0){
+      return 392;
+    }
+    else{
+      return 360;
+    }
+  })
   .text(function(d){
     return d;
   })
