@@ -1,0 +1,26 @@
+{
+  "label": "Time of Promotion = Morning", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+  "children": [
+    {
+      "label": "Content = Safety", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+      "children": [
+        {
+          "label": "Leaf - 2", "condition": 0, "type": "leaf", "leaf_num": "2", "sample_count": "25"}, {
+          "label": "Content = Safety/New Indication", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+          "children": [
+            {
+              "label": "Leaf - 4", "condition": 0, "type": "leaf", "leaf_num": "4", "sample_count": "36"}, {
+              "label": "Leaf - 5", "condition": 0, "type": "leaf", "leaf_num": "5", "sample_count": "253"}]}]}, {
+      "label": "Content = Safety/New Indication/Efficacy", "condition": "2.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+      "children": [
+        {
+          "label": "Content = Safety", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+          "children": [
+            {
+              "label": "Leaf - 8", "condition": 0, "type": "leaf", "leaf_num": "8", "sample_count": "269"}, {
+              "label": "Leaf - 9", "condition": 0, "type": "leaf", "leaf_num": "9", "sample_count": "520"}]}, {
+          "label": "Time of Promotion = Morning/Afternoon", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+          "children": [
+            {
+              "label": "Leaf - 11", "condition": 0, "type": "leaf", "leaf_num": "11", "sample_count": "58"}, {
+              "label": "Leaf - 12", "condition": 0, "type": "leaf", "leaf_num": "12", "sample_count": "55"}]}]}]}

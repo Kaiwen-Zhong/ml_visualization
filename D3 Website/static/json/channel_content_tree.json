@@ -1,0 +1,26 @@
+{
+  "label": "Channel = Email", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "0",
+  "children": [
+    {
+      "label": "Content = Safety", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "1",
+      "children": [
+        {
+          "label": "Leaf - 2", "condition": 0, "type": "leaf", "leaf_num": "2", "sample_count": "301", "node": "2"}, {
+          "label": "Content = Safety/New Indication/Efficacy", "condition": "2.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "3",
+          "children": [
+            {
+              "label": "Leaf - 4", "condition": 0, "type": "leaf", "leaf_num": "4", "sample_count": "557", "node": "4"}, {
+              "label": "Leaf - 5", "condition": 0, "type": "leaf", "leaf_num": "5", "sample_count": "59", "node": "5"}]}]}, {
+      "label": "Content = Safety/New Indication/Efficacy", "condition": "2.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "6",
+      "children": [
+        {
+          "label": "Content = Safety/New Indication", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "7",
+          "children": [
+            {
+              "label": "Leaf - 8", "condition": 0, "type": "leaf", "leaf_num": "8", "sample_count": "375", "node": "8"}, {
+              "label": "Leaf - 9", "condition": 0, "type": "leaf", "leaf_num": "9", "sample_count": "179", "node": "9"}]}, {
+          "label": "Channel = Email/Direct Mail", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "10",
+          "children": [
+            {
+              "label": "Leaf - 11", "condition": 0, "type": "leaf", "leaf_num": "11", "sample_count": "46", "node": "11"}, {
+              "label": "Leaf - 12", "condition": 0, "type": "leaf", "leaf_num": "12", "sample_count": "98", "node": "12"}]}]}]}

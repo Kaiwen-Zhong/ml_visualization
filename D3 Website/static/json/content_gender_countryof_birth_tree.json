@@ -1,0 +1,30 @@
+{
+"label": "content = Safety", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "0",
+ "children": [
+{
+"label": "gender = Male", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "1",
+ "children": [
+{
+"label": "country of birth = USA/India/Chine/Russia/England/Scotland", "condition": "5.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "2",
+ "children": [
+{
+"label": "Leaf - 3", "condition": 0, "type": "leaf", "leaf_num": "3", "sample_count": "29010", "node": "3"}, {
+"label": "Leaf - 4", "condition": 0, "type": "leaf", "leaf_num": "4", "sample_count": "4591", "node": "4"}]}, {
+"label": "country of birth = USA/India/China", "condition": "2.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "5",
+ "children": [
+{
+"label": "Leaf - 6", "condition": 0, "type": "leaf", "leaf_num": "6", "sample_count": "3280", "node": "6"}, {
+"label": "Leaf - 7", "condition": 0, "type": "leaf", "leaf_num": "7", "sample_count": "9120", "node": "7"}]}]}, {
+"label": "content = Safety/New Indication/Efficacy", "condition": "2.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "8",
+ "children": [
+{
+"label": "content = Safety/New Indication", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "9",
+ "children": [
+{
+"label": "Leaf - 10", "condition": 0, "type": "leaf", "leaf_num": "10", "sample_count": "500", "node": "10"}, {
+"label": "Leaf - 11", "condition": 0, "type": "leaf", "leaf_num": "11", "sample_count": "62499", "node": "11"}]}, {
+"label": "country of birth = USA/India/Chine/Russia/England/Scotland", "condition": "5.50", "type": "split", "leaf_num": "100", "sample_count": "0", "node": "12",
+ "children": [
+{
+"label": "Leaf - 13", "condition": 0, "type": "leaf", "leaf_num": "13", "sample_count": "32300", "node": "13"}, {
+"label": "Leaf - 14", "condition": 0, "type": "leaf", "leaf_num": "14", "sample_count": "4200", "node": "14"}]}]}]}
