@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>D3 </title>
+  <!--<link rel="stylesheet" type="text/css" href = "style_website.css">-->
+  <link href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--<link rel="stylesheet" href="{{ url_for('static',    filename='css/new_style.css') }}">-->
+  <link rel="stylesheet" type="text/css" href = "../static/css/new_style.css?q=5bbvkjkvbjhb76">
+
+</head>
+
+<body>
+
+<!--<script src="//d3js.org/d3.v3.min.js"></script>-->
+<script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+
+<script src="https://d3js.org/d3-ease.v1.min.js"></script>
+<script src="https://d3js.org/d3-random.v1.min.js"></script>
+<script src="https://unpkg.com/d3-hist2d@1.0.6/build/d3-hist2d.min.js"></script>
+
+
+  <div class="storyboard">
+
+    <section id="header">
+      <h1>
+        <center>
+          <i>
+          A Visual Presentation to Predict the Next Best Action
+          </i>
+        </center>
+      </h1>
+    </section>
+
+    <br><br><br><br><br><br>
+
+
+
+
+
+
+    <section class="text" id="introduction">
+      <h2>
+        Introduction
+      </h2>
+      This website is a visual representation of a pharma commercial <b>Next Best Action</b> use case using <b>a recommendation engine</b>,
+      that can identify complex patterns in data and dynamically provide recommendations for targeting a particular physician at the right time via
+      the right channel and the right content.
+      This analysis aids in improving physician engagement, enhancing physician experience and making efficient, and
+      cost effective promotions.<br><br>
+
+      The brain in the visual represents our recommendation engine that takes in 5 categories of data as input and provide recommendations on
+      physician targeting on a weekly basis.
+
+
+    </section>
+
+    <div id="brain_intro"></div>
+
+    <script src = "../static/js/main.js?nnnvsgvgb"></script>
+
+
+
+
+
+    <section class="text" id="intuition">
+      <h2>
+        First, Some Intuition
+      </h2>
+      Next Best Action is a customer-centric marketing technique that refers to delivering the right message at the right time via the right channel to customers,
+      increasing chances of sale for the products.<br><br>
+
+      Pharmaceutical companies encounter challenges around organizing promotions for physicians.
+      They target physicians with varied content, time and channel to obtain a response.<br><br>
+
+      This problem can be more effectively addressed using a recommendation engine. This engine encapsulates machine learning techniques that take into account
+      past behaviours, actions, interests and output likeliness of a physician responding for a particular combination of channel, content
+      and time. An algorithm recommends a combination that is most likely to receive response<br><br>
+
+      <!--While traditional statistical methods such as linear models, Bayesian methods can be used to solve the next best action problem,
+      they perform poorly in comparison with modern machine learning models. Traditional statistics work on small datasets and
+      are bound by tight assumptions about the problem and data distribution.
+      They tend to work better when the relationship between data is stable.
+      With pharma companies making millions of promotions for different products, the amount of data produced in real time is huge and
+      the data captured has complex characteristics. Machine learning algorithms give better predictions on this form of data
+      since they make fewer assumptions and adapt a process of automated learning, improving over time.
+      These models are also generalizable, meaning they can generate accurate predictions when run on thousands of different datasets.<br><br>-->
+
+      Pharma companies make millions of promotions for different products and the volume of data produced in real time is huge.
+      Machine learning in contrast with traditional statistics can effectively deal with this complex data. Machine learning algorithms provide better accuracy due to
+      iterative tuning that improves model performance over time and reduces human intervention. ML techniques also provide dynamic model refinement
+      and faster refresh as new data comes in.<br><br>
+      The visual elaborates working of the <b>recommendation engine.</b> ML model outputs likelihood of response for combination of channel, content and time.
+      Combination with most likelihood of response is recommended by the engine.
+
+    </section>
+    <div id="intuition_viz"></div>
+
+    <script src = "../static/js/intuition.js?bjdjsbjf"></script>
+
+
+
+
+
+    <section class="text" id="data_dive">
+      <h2>
+        Data Dive
+      </h2>
+      The data we host provides <b>3 months</b> of past promotion encounters with <b>5000</b> physicians.
+      We build a model that predicts if physician will <b>respond</b> to each of these promotions.<br>
+      This model consumes 5 categories of data. They include <b>Physicain Demographic Data</b>, <b>Physicain Medical Information</b>,
+      <b>Promotion Data</b>, <b>Competitor Product Share</b> and <b>Prescription Data</b>
+      On an average companies target physicians with
+      <b>2 emails and 1 rep call per week and 1 direct mail per month</b>.<br><br>
+      Select combination of features below to analyze how different relationships affect response behaviour of physicians<br><br>
+
+
+
+      <form>
+        <label>
+          <b>X-axis</b>
+        </label>
+        <select id="xaxis" name="xaxis">
+          <option value="age">Age</option>
+          <option value="channel">Channel</option>
+          <option value="content">Content</option>
+          <option value="date_time">Date time</option>
+          <option value="gender">Gender</option>
+          <option value="country_of_birth">Country of Birth</option>
+          <option value="location">Location</option>
+          <option value="school">School</option>
+          <option value="patient_count_new">Patient Count</option>
+          <option value="product_A_share">Product A Share</option>
+          <option value="response">Response</option>
+        </select>
+        <label>
+          <b>Y-axis</b>
+        </label>
+        <select id="yaxis" name="yaxis">
+          <option value="age">Age</option>
+          <option value="channel">Channel</option>
+          <option value="content">Content</option>
+          <option value="date_time">Date time</option>
+          <option value="gender">Gender</option>
+          <option value="country_of_birth">Country of Birth</option>
+          <option value="location">Location</option>
+          <option value="school">School</option>
+          <option value="patient_count_new">Patient Count</option>
+          <option value="product_A_share">Product A Share</option>
+          <option value="response">Response</option>
+        </select>
+        <input type="submit" onclick="getData(event)" />
+      </form>
+    </section>
+
+
+    <div id="data_dive_viz"></div>
+    <script src="../static/js/data_dive.js?bkbdkjbjjnknkkjjj4tx"></script>
+
+
+    <!--<section class="text" id="sub_data_dive">
+      The graph is a 2d-histogram representing the <b>response</b> of physicians for variable <b>content and channel</b> combination.<br>
+      The <b>grey circle</b> depicts the total promotions extended by pharma companies and <b>green circle</b> represents
+      the frequency of response received for that particular content-channel combination.
+
+    </section>-->
+
+
+
+    <section class="text" id="machine_learning">
+      <h2>
+        Introducing Machine Learning
+      </h2>
+      Machine learning is a field that uses statistical techniques to give computers ability to learn certain patterns
+      in data that are relatively challenging for humans to identify.<br>
+      <!--Interpreting the 2d-histogram, we can say that physician usually respond to <b>Direct Mails</b> and <b>Rep calls</b> more
+      compared to <b>Emails</b>.<br>--><br>
+      We can analyze the visualization for response behaviour of different aged physicians to various channels and
+      easily draw boundaries to differentiate <b>response</b> vs <b>no response</b>. Responses plotted in green and grey regions correspond to response
+      and no response respectively.<br><br>
+      In cases when we need to identify such patterns from data that see multiple dimensions, we need sophisticated computer statistical models
+      that would help us dig these patters from high dimensional data.<br>
+      Some famous models include:<br>
+      <li>Decision Trees</li>
+      <li>Random Forest</li>
+      <li>Neural Networks</li>
+      <br>
+      For the purpose of this presentation, we use a variation of Random Forest called the <b>Sparse Forest Model</b>.
+    </section>
+    <div id="ml_viz"></div>
+    <script src="../static/js/ml.js?bkbdkvjjj4tx"></script>
+
+
+
+
+
+
+
+    <section class="text" id="prior_to_sparse_forest">
+      <h2>
+        Intuition into the Building Block for Sparse Forest
+      </h2>
+      Sparse forest model contains multiple trees ranging from 2-50, each giving out prediction on the input it receives.<br>
+      Prior to understanding how a sparse forest model would work, it is vital to understand how a decision tree is constructed.
+    </section>
+
+
+
+
+
+    <section class="text" id="decision tree">
+      A decision tree uses if-then statements to define patterns in data.<br><br>
+      These statements are called <b>forks</b> in machine learning and they split data into branches based on a value.<br>
+      For Example, considering the above distribution, if the age of a physician is greater than 45 then he is likely to respond to Direct Mail or Rep call.
+
+
+      That value between the branches is called a <b>split point</b>. This split point is selected based on feature that will make each branch as
+      homogeneous as possible. Meaning, if the split point is age as 45 and all data points in one branch respond to email while the other branch
+      has physicians that respond to direct mail then both branches are homogeneous and perfectly classified.<br>
+
+      Usually this is not the case and so split points are created at each branch until homogeneity is achieved. This repetitive process is
+      called recursion.
+
+    </section>
+
+
+
+
+
+    <section class="text" id="sparse_forest">
+      <h2>
+        Sparse Forest
+      </h2>
+      Sparse forest is built of multiple decision tree models. The idea behind it is to construct many such trees each time
+      taking a different subset of training data and features into consideration. Later, decisions from different trees are taken into a voting
+      and the prediction would result into the class that receives highest votes.<br><br>
+      This model has some advantages over the traditional decision tree model.
+      It is less likely to run into the problem of <b>overfitting</b>(a common problem in statistical models where the models tend to
+      remember the data while training thus performing poorly on new unseen data).<br>
+      It takes into consideration various decisions instead of relying on just one tree.
+
+    </section>
+
+
+
+
+
+
+
+
+    <section class="text" id="sparse_forest_nba">
+      <h2>
+        Sparse Forest Model Predicting the Next Best Action
+      </h2>
+      For predicting the <b>Next Best Action</b> for a physician, we use a Sparse Forest model with 7 trees.
+
+    </section>
+
+    <div class="chart">
+      <div id = "chart1" ></div>
+      <div id = "chart2" ></div>
+      <div id = "chart3" ></div>
+      <div id = "chart4" ></div>
+      <div id = "chart5" ></div>
+      <div id = "chart6" ></div>
+      <div id = "chart7" ></div>
+
+    </div>
+
+    <script src = "../static/js/d_tree.js?nvgtmbfytdrfydnl"></script>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="text" id="sparse_forest_voting">
+      <h2>
+        Analyzing the Voting Process for Sparse Forest
+      </h2>
+      Each tree in the sparse forest model will predict if a particular promotion will see response from physician.
+      These are then put through a vote to give out final prediction.<br>
+      Each block in the panel represents an encounter with Dr.Hymes.<br>
+      The grey circles represent that the tree predicted a <b>No Response</b> for that promotion and green circles indicate
+      a <b>Response</b>.<br><br>
+
+      For Example, focusing on the first voting block, 4 trees predict that there will be a <b>Response</b> while 3 predict
+      as <b>No Response</b>. Putting this through a vote, the model will predict <b>Response</b> for this promotion and the value
+      in the voting block indicates the potential promotion to be made.
+
+
+    </section>
+    <div id="voting"></div>
+    <script src = "../static/js/voting.js?vcdjh"></script>
+
+
+
+
+
+
+
+
+    <section class="text" id="sparse_forest_voting_rest">
+      Hover over the different panels to see predictions by the model for remaining physicians.
+    </section>
+
+
+    <div id="voting_rest">
+      <div id = "test2"></div>
+      <div id = "test3"></div>
+      <div id = "test4"></div>
+      <div id = "test5"></div>
+      <div id = "test6"></div>
+      <div id = "test7"></div>
+      <div id = "test8"></div>
+      <div id = "test9"></div>
+      <div id = "test10"></div>
+
+      <div id = "test11"></div>
+      <div id = "test12"></div>
+      <div id = "test13"></div>
+      <div id = "test14"></div>
+      <div id = "test15"></div>
+      <div id = "test16"></div>
+      <div id = "test17"></div>
+      <div id = "test18"></div>
+      <div id = "test19"></div>
+      <div id = "test20"></div>
+
+      <div id = "test21"></div>
+      <div id = "test22"></div>
+      <div id = "test23"></div>
+      <div id = "test24"></div>
+      <div id = "test25"></div>
+      <div id = "test26"></div>
+      <div id = "test27"></div>
+      <div id = "test28"></div>
+      <div id = "test29"></div>
+      <div id = "test30"></div>
+
+      <div id = "test31"></div>
+      <div id = "test32"></div>
+      <div id = "test33"></div>
+      <div id = "test34"></div>
+      <div id = "test35"></div>
+      <div id = "test36"></div>
+      <div id = "test37"></div>
+      <div id = "test38"></div>
+      <div id = "test39"></div>
+      <div id = "test40"></div>
+    </div>
+
+    <script src = "../static/js/voting_rest.js?4677"></script>
+
+
+
+
+
+
+    <section class="text" id="accuracy">
+      <h2>
+        Evaluating the Model
+      </h2>
+      Lets evaluate the performance of our model on test data!
+
+      <div id = "accuracy_num"></div>
+
+
+    </section>
+
+    <script src = "../static/js/accuracy.js?fd6nknl7d"></script>
+
+
+
+
+
+
+
+    <section class="text" id="sparse_forest_wrong_predictions">
+      <h2>
+        Dealing with False Predictions
+      </h2>
+      Dealing with false predictions is very vital in machine learning so that over time the model improves and we
+      get better results.<br><br>
+      The approach we use here is to assign more weight to trees that have a higher true prediction rate.<br>
+      So in the future voting process, the tree that has a higher strike rate has more equity in making the final decision.
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+  </div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</body>
