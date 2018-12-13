@@ -1,0 +1,30 @@
+{
+  "label": "channel = Email", "condition": "0.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+  "children": [
+    {
+      "label": "age <= 43.5", "condition": "43.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+      "children": [
+        {
+          "label": "age <= 41.5", "condition": "41.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+          "children": [
+            {
+              "label": "Leaf - 3", "condition": 0, "type": "leaf", "leaf_num": "3", "sample_count": "396"}, {
+              "label": "Leaf - 4", "condition": 0, "type": "leaf", "leaf_num": "4", "sample_count": "88"}]}, {
+          "label": "age <= 45.5", "condition": "45.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+          "children": [
+            {
+              "label": "Leaf - 6", "condition": 0, "type": "leaf", "leaf_num": "6", "sample_count": "44"}, {
+              "label": "Leaf - 7", "condition": 0, "type": "leaf", "leaf_num": "7", "sample_count": "418"}]}]}, {
+      "label": "age <= 27.5", "condition": "27.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+      "children": [
+        {
+          "label": "channel = Email/Direct Mail", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+          "children": [
+            {
+              "label": "Leaf - 10", "condition": 0, "type": "leaf", "leaf_num": "10", "sample_count": "58"}, {
+              "label": "Leaf - 11", "condition": 0, "type": "leaf", "leaf_num": "11", "sample_count": "33"}]}, {
+          "label": "channel = Email/Direct Mail", "condition": "1.50", "type": "split", "leaf_num": "100", "sample_count": "0",
+          "children": [
+            {
+              "label": "Leaf - 13", "condition": 0, "type": "leaf", "leaf_num": "13", "sample_count": "109"}, {
+              "label": "Leaf - 14", "condition": 0, "type": "leaf", "leaf_num": "14", "sample_count": "440"}]}]}]}
