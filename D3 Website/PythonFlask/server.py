@@ -32,7 +32,7 @@ def home():
    xaxis = request.form['x_axis']  
    yaxis = request.form['y_axis']  
    
-   data = pd.read_csv("mock_data_final_int_3.csv")
+   data = pd.read_csv("../Data/mock_data_final_int_3.csv")
    
    var1 = data[xaxis].tolist()
    
