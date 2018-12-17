@@ -1,5 +1,8 @@
 # ml_visualization
 
-Please Fork the Repository and run the website.html file in the "HTML File" folder to see the Visualization Website.<br><br>
+Please Follow the following steps to host and view the website:<br>
 
-Alternatively, paste this URL into the browser to view the visualization: <b>http://ec2-18-208-136-201.compute-1.amazonaws.com</b>.
+1. Please Fork the Repository and via command line navigate into the folder D3_Website.<br>
+2. If using <b>windows command line</b> run <i>set FLASK_APP=server.py</i> or if its a <b>mac or linux</b> run <i>export FLASK_APP=server.py</i>.<br>
+3. run command <i>flask run</i> and a url should appear on the command line.<br>
+4. Copy the url into your browser to view the website.
