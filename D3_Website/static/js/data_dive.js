@@ -106,7 +106,7 @@ function getData(e) {
           .attr('r', 7)
           .attr("fill", function(d){
             if(d[2] === 0){
-              return '#F47421';
+              return '#999999';
             }
             else{
               return 'green';
@@ -211,7 +211,7 @@ function getData(e) {
           .attr('r', 7)
           .attr("fill", function(d){
             if(d[2] === 0){
-              return '#F47421';
+              return '#999999';
             }
             else{
               return 'green';
@@ -316,7 +316,7 @@ function getData(e) {
           .attr('r', 7)
           .attr("fill", function(d){
             if(d[2] === 0){
-              return '#F47421';
+              return '#999999';
             }
             else{
               return 'green';
